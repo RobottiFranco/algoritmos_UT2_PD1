@@ -1,0 +1,18 @@
+miFunción
+Desde i = 1 hasta N-1 hacer
+  Desde j = N hasta i+1 hacer
+    Si arreglo[j].clave < arreglo[j-1].clave entonces
+      Intercambia(arreglo[j], arreglo[j-1])
+    Fin si
+  Fin desde
+Fin desde
+Fin
+
+El bucle externo "Desde i = 1 hasta N-1" se ejecuta N-1 veces. resulta de O(N)
+Dentro de este bucle, el bucle interno "Desde j = N hasta i+1" se ejecuta (N-i) veces en cada iteración del bucle externo. resultando tambien de O(N)
+Dentro del bucle interno, hay una comparación y, potencialmente, un intercambio de elementos del arreglo. O
+(1)
+
+Dado que el peor caso del algoritmo de burbuja es cuadrático (O(N^2)), donde N es el número de elementos en el arreglo,
+podemos concluir que el orden de tiempo de ejecución de tu algoritmo es O(N^2),
+lo que significa que el tiempo de ejecución aumenta cuadráticamente con el tamaño del arreglo de entrada.
